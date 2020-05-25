@@ -1,0 +1,58 @@
+// IMPORTS
+@import "reset";
+
+// VARIABLES
+@height: 120rem;
+
+// MIXINS
+.flex() {
+  display: flex;
+}
+
+// ELEMENTS
+html {
+  font-size: 62.5%;
+  background-color: #000;
+}
+
+// CLASSES
+.app {
+  .flex();
+  height: @height;
+  width: @height * 1.5;
+  //   background-color: #ccc;
+  .sidebar {
+    .flex();
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 45rem;
+    background-color: #fff;
+    img {
+      object-fit: scale-down;
+      margin: 5rem 0 0 0;
+      width: 30rem;
+    }
+  }
+  .main {
+    flex: 3;
+    .flex();
+    align-content: stretch;
+    justify-content: center;
+    background-color: #01002e;
+    a {
+      text-decoration: none;
+      color: white;
+      text-align: center;
+      h3 {
+        font: 20rem Montserrat;
+      }
+      p {
+        font: 8rem Montserrat;
+      }
+    }
+  }
+}
+
+// .flexbox {
+//   .flex();
+// }
