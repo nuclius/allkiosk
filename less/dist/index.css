@@ -305,7 +305,6 @@ template {
 }
 html {
   font-size: 62.5%;
-  background-color: #000;
 }
 .app {
   display: flex;
@@ -317,7 +316,6 @@ html {
   align-items: flex-start;
   justify-content: space-around;
   width: 45rem;
-  background-color: #fff;
 }
 .app .sidebar img {
   object-fit: scale-down;
@@ -337,8 +335,10 @@ html {
   text-align: center;
 }
 .app .main a h3 {
-  font: 20rem Montserrat;
+  font: 20rem Arial;
+  font-weight: 600;
 }
 .app .main a p {
-  font: 8rem Montserrat;
+  font: 8rem Arial;
+  font-weight: 600;
 }

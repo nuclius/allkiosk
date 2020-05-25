@@ -6,51 +6,50 @@
 
 // MIXINS
 .flex() {
-  display: flex;
+	display: flex;
 }
 
 // ELEMENTS
 html {
-  font-size: 62.5%;
-  background-color: #000;
+	font-size: 62.5%;
 }
 
 // CLASSES
 .app {
-  .flex();
-  height: @height;
-  width: @height * 1.5;
-  //   background-color: #ccc;
-  .sidebar {
-    .flex();
-    align-items: flex-start;
-    justify-content: space-around;
-    width: 45rem;
-    background-color: #fff;
-    img {
-      object-fit: scale-down;
-      margin: 5rem 0 0 0;
-      width: 30rem;
-    }
-  }
-  .main {
-    flex: 3;
-    .flex();
-    align-content: stretch;
-    justify-content: center;
-    background-color: #01002e;
-    a {
-      text-decoration: none;
-      color: white;
-      text-align: center;
-      h3 {
-        font: 20rem Montserrat;
-      }
-      p {
-        font: 8rem Montserrat;
-      }
-    }
-  }
+	.flex();
+	height: @height;
+	width: @height * 1.5;
+	.sidebar {
+		.flex();
+		align-items: flex-start;
+		justify-content: space-around;
+		width: 45rem;
+		img {
+			object-fit: scale-down;
+			margin: 5rem 0 0 0;
+			width: 30rem;
+		}
+	}
+	.main {
+		flex: 3;
+		.flex();
+		align-content: stretch;
+		justify-content: center;
+		background-color: #01002e;
+		a {
+			text-decoration: none;
+			color: white;
+			text-align: center;
+			h3 {
+        font: 20rem Arial;
+        font-weight: 600;
+			}
+			p {
+        font: 8rem Arial;
+        font-weight: 600;
+			}
+		}
+	}
 }
 
 // .flexbox {
