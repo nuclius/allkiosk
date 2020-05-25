@@ -308,14 +308,15 @@ html {
 }
 .app {
   display: flex;
-  height: 120rem;
-  width: 180rem;
+  min-height: 120rem;
+  min-width: 180rem;
 }
 .app .sidebar {
   display: flex;
   align-items: flex-start;
   justify-content: space-around;
-  width: 45rem;
+  flex: 1;
+  min-width: 45rem;
 }
 .app .sidebar img {
   object-fit: scale-down;

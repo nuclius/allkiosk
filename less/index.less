@@ -16,20 +16,23 @@ html {
 
 // CLASSES
 .app {
-	.flex();
-	height: @height;
-	width: @height * 1.5;
-	.sidebar {
+  .flex();
+	min-height: @height;
+	min-width: @height * 1.5;
+  
+  .sidebar {
 		.flex();
 		align-items: flex-start;
 		justify-content: space-around;
-		width: 45rem;
+    flex: 1;
+    min-width: 45rem;
 		img {
 			object-fit: scale-down;
 			margin: 5rem 0 0 0;
 			width: 30rem;
 		}
-	}
+  }
+  
 	.main {
 		flex: 3;
 		.flex();
